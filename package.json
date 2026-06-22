@@ -1,5 +1,6 @@
 {
     "name": "fumonutz",
     "private":"true",
-    "type": "module"
+    "type": "module",
+    "workspaces": ["packages/*"]
 }
