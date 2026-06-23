@@ -53,9 +53,12 @@ if (!response.ok || !data.ok) {
 }
 
 const messageId = data.result?.message_id;
-console.log(`Message sent successfully! Message ID: ${chatId}`);
-  });
-if (messageID !== undefined) {
-  console.log(`Message sent successfully! Message ID: ${messageID}`);
+
+if (messageId !== undefined) {
+  console.log(`Message sent successfully! Message ID: ${messageId}`);
+} else {
+  console.log("Message sent successfully!");
 }
+});
+
 program.parseAsync(process.argv);
