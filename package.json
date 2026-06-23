@@ -2,5 +2,8 @@
     "name": "fumonutz",
     "private":"true",
     "type": "module",
-    "workspaces": ["packages/*"]
+    "workspaces": ["packages/*"], 
+    "scripts": {
+        "dev:cli":"bun run packages/cli/src/index.ts"
+    }
 }
